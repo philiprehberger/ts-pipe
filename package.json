@@ -33,11 +33,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/philiprehberger/ts-ts-pipe.git"
+    "url": "git+https://github.com/philiprehberger/ts-pipe.git"
   },
-  "homepage": "https://github.com/philiprehberger/ts-ts-pipe#readme",
+  "homepage": "https://github.com/philiprehberger/ts-pipe#readme",
   "bugs": {
-    "url": "https://github.com/philiprehberger/ts-ts-pipe/issues"
+    "url": "https://github.com/philiprehberger/ts-pipe/issues"
   },
   "author": "Philip Rehberger",
   "engines": {
