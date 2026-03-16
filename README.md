@@ -1,6 +1,6 @@
 # @philiprehberger/ts-pipe
 
-[![CI](https://github.com/philiprehberger/ts-pipe/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/ts-pipe/actions/workflows/ci.yml)
+[![CI](https://github.com/philiprehberger/ts-pipe/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/ts-pipe/actions/workflows/publish.yml)
 [![npm version](https://img.shields.io/npm/v/@philiprehberger/ts-pipe.svg)](https://www.npmjs.com/package/@philiprehberger/ts-pipe)
 [![License](https://img.shields.io/github/license/philiprehberger/ts-pipe)](LICENSE)
 
@@ -47,6 +47,15 @@ format("  hello  "); // "[HELLO]"
 | `compose(...fns)` | Right-to-left function composition |
 | `pipeline(...fns)` | Left-to-right composition, returns reusable function |
 | `pipeAsync(value, ...fns)` | Async-aware pipeline with await between steps |
+
+
+## Development
+
+```bash
+npm install
+npm run build
+npm test
+```
 
 ## License
 
