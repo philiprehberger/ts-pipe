@@ -1,5 +1,9 @@
 # @philiprehberger/ts-pipe
 
+[![CI](https://github.com/philiprehberger/ts-pipe/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/ts-pipe/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/@philiprehberger/ts-pipe.svg)](https://www.npmjs.com/package/@philiprehberger/ts-pipe)
+[![License](https://img.shields.io/github/license/philiprehberger/ts-pipe)](LICENSE)
+
 Typed functional pipe and compose for TypeScript.
 
 ## Installation
