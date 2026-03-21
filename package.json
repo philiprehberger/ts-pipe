@@ -1,5 +1,5 @@
 {
-  "name": "@philiprehberger/ts-pipe",
+  "name": "@philiprehberger/pipe",
   "version": "0.1.3",
   "description": "Typed functional pipe and compose for TypeScript",
   "type": "module",

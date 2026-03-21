@@ -1,7 +1,7 @@
-# @philiprehberger/ts-pipe
+# @philiprehberger/pipe
 
 [![CI](https://github.com/philiprehberger/ts-pipe/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/ts-pipe/actions/workflows/ci.yml)
-[![npm version](https://img.shields.io/npm/v/@philiprehberger/ts-pipe.svg)](https://www.npmjs.com/package/@philiprehberger/ts-pipe)
+[![npm version](https://img.shields.io/npm/v/@philiprehberger/pipe.svg)](https://www.npmjs.com/package/@philiprehberger/pipe)
 [![License](https://img.shields.io/github/license/philiprehberger/ts-pipe)](LICENSE)
 
 Typed functional pipe and compose for TypeScript
@@ -9,13 +9,13 @@ Typed functional pipe and compose for TypeScript
 ## Installation
 
 ```bash
-npm install @philiprehberger/ts-pipe
+npm install @philiprehberger/pipe
 ```
 
 ## Usage
 
 ```ts
-import { pipe, pipeline, pipeAsync } from '@philiprehberger/ts-pipe';
+import { pipe, pipeline, pipeAsync } from '@philiprehberger/pipe';
 
 const result = pipe(" Hello ", s => s.trim(), s => s.split(" "));
 // string[] — fully inferred
@@ -29,7 +29,7 @@ const data = await pipeAsync(userId, fetchUser, extractProfile, validate);
 ### Compose (right-to-left)
 
 ```ts
-import { compose } from '@philiprehberger/ts-pipe';
+import { compose } from '@philiprehberger/pipe';
 
 const format = compose(
   (s: string) => `[${s}]`,
