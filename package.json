@@ -1,6 +1,6 @@
 {
   "name": "@philiprehberger/pipe",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Typed functional pipe and compose for TypeScript",
   "type": "module",
   "main": "./dist/index.cjs",
