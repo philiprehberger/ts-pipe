@@ -4,6 +4,8 @@
 [![npm version](https://img.shields.io/npm/v/@philiprehberger/pipe.svg)](https://www.npmjs.com/package/@philiprehberger/pipe)
 [![Last updated](https://img.shields.io/github/last-commit/philiprehberger/ts-pipe)](https://github.com/philiprehberger/ts-pipe/commits/main)
 
+![@philiprehberger/pipe](https://raw.githubusercontent.com/philiprehberger/ts-pipe/main/package-card.webp)
+
 Typed functional pipe and compose for TypeScript
 
 ## Installation
@@ -39,6 +41,22 @@ const format = compose(
 format("  hello  "); // "[HELLO]"
 ```
 
+### Tap (Side Effects)
+
+`tap` runs a side-effect function (logging, metrics, debugging) on the current
+value and passes it through unchanged. It works in both `pipe` and `pipeAsync`.
+
+```ts
+import { pipe, tap } from '@philiprehberger/pipe';
+
+const result = pipe(
+  data,
+  parse,
+  tap(console.log),
+  transform,
+);
+```
+
 ## API
 
 | Function | Description |
@@ -47,6 +65,7 @@ format("  hello  "); // "[HELLO]"
 | `compose(...fns)` | Right-to-left function composition |
 | `pipeline(...fns)` | Left-to-right composition, returns reusable function |
 | `pipeAsync(value, ...fns)` | Async-aware pipeline with await between steps |
+| `tap(fn)` | Runs `fn(value)` for side effects, returns `value` unchanged |
 
 ## Development
 

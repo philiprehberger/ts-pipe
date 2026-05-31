@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.0
+
+- Add `tap(fn)` utility for inspection / side-effect steps in pipelines (`pipe(data, parse, tap(log), transform)`)
+- CI: publish workflow now runs `npm test` before publishing
+- README: add package card image
+
 ## 0.1.5
 
 - Standardize README to 3-badge format with emoji Support section
